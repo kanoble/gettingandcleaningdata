@@ -60,7 +60,8 @@ mergedset <- mergedset %>%
     summarise_each(funs(mean))
 
 ## Other cleanup of column names to make them tidy.
-colnames(mergedset) <- sub("Acc", "Acceleration", colnames(mergedset), fixed = TRUE)
+colnames(mergedset) <- sub("tAcc", "Accelerometer", colnames(mergedset), fixed = TRUE)
+colnames(mergedset) <- sub("yAcc", "yAcceleration", colnames(mergedset), fixed = TRUE)
 colnames(mergedset) <- sub("Gyro", "Gyroscope", colnames(mergedset), fixed = TRUE)
 colnames(mergedset) <- sub("Mag", "Magnitude", colnames(mergedset), fixed = TRUE)
 colnames(mergedset) <- sub("BodyBody", "Body", colnames(mergedset), fixed = TRUE)
