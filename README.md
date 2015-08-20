@@ -5,7 +5,18 @@ instructions for Coursera's Getting and Cleaning Data course project.
 
 Original data source: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The script contained in this repository, run_analysis.R, outputs a .txt file of the final merged tidy data set (means of the variables for each subject for each activity) and does so by sequencing through the following steps.
+The script contained in this repository, run_analysis.R, outputs a .txt file of the final merged tidy data set (means of the variables for each subject for each activity) and does so by sequencing through the steps outlined in this README.
+
+Note that the tidy data set of the script, mergedset.txt, can be read back into R using the following code if the file is in the working directory:
+read.table("mergedset.txt", header = TRUE)
+
+Also note that the output is considered to be tidy by complying with the following principles:
+- Each variable is in one column
+- Each different observation of that variable is in a different row
+- There is one table for each "kind" of variable
+- Column names are descriptive
+
+# Steps used in the script to create the tidy data set.
 
 ## Initialize libraries that contain dependent functions for the program.
 
