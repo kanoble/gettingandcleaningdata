@@ -66,9 +66,6 @@ colnames(mergedset) <- sub("Mag", "Magnitude", colnames(mergedset), fixed = TRUE
 colnames(mergedset) <- sub("BodyBody", "Body", colnames(mergedset), fixed = TRUE)
 colnames(mergedset) <- sub("Freq", "Frequency", colnames(mergedset), fixed = TRUE)
 colnames(mergedset) <- sub("\\(\\)", "", colnames(mergedset))
-#colnames(mergedset) <- sub("\\)", "", colnames(mergedset))
-#colnames(mergedset) <- sub(".", "", colnames(mergedset))
-#colnames(mergedset) <- sub("_", "", colnames(mergedset))
 
 ## Revise the names of the column variables to indicate that they are 
 ## now the mean of their original values.
